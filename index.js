@@ -5,8 +5,6 @@ const {
 } = require("discord.js");
 const { discordToken, geniusToken } = require('./config.json');
 const Genius = require("genius-lyrics");
-const MeCab = require('mecab-async');
-const mecab = new MeCab();
 
 const client = new Client({
     intents: Object.values(GatewayIntentBits).filter(Number.isInteger)
